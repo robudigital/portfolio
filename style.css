@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+main {
+  width: 100%;
+  border-radius: 2px solid white;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+}
+.hero img {
+  width: 20%;
+  border-radius: 30px;
+}
+.hero h2 {
+  font-size: 2em;
+  font-weight: 200;
+}
+.hero h1 {
+  font-size: 3em;
+  font-weight: 200;
+}
+.hero p {
+  color: rgb(163, 162, 160);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 15px;
+  margin: 0 10vmax;
+}
+.about img {
+  width: 30vmax;
+  border-radius: 30px;
+}
+.about h3 {
+  font-size: 2em;
+}
+.about p {
+  font-size: 1.5em;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 15rem;
+}
+.skills h1 {
+  font-size: 4em;
+  font-weight: 200;
+}
+.skills .images img {
+  width: 10%;
+}
+.skills marquee {
+  width: 100%;
+  padding: 50px;
+  line-height: 1rem;
+  margin: -80px;
+}
+.skills p {
+  font-size: 1.5rem;
+  color: rgb(143, 141, 141);
+  gap: 50px;
+}
+
+.service {
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+.service .service_box {
+  width: 80%;
+  gap: 50px;
+  margin: 10%;
+  display: flex;
+  align-items: center;
+}
+.service .service_box img {
+  width: 15%;
+  border-radius: 20px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.project .slider {
+  width: 30vw;
+  height: 40vh;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contact {
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.contact form {
+  width: 50%;
+  height: 50vh;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.contact form input {
+  width: 100%;
+  font-size: 30px;
+  background-color: black;
+  border-radius: 5px;
+}
+.contact form textarea {
+  width: 100%;
+  background-color: black;
+  height: 8em;
+}
+.contact form input {
+  width: 100%;
+  font-size: 30px;
+  background-color: black;
+  border-radius: 5px;
+}
+.contact form textarea {
+  width: 100%;
+  background-color: black;
+  height: 8em;
+  border-radius: 5px;
+}
+.contact form button {
+  font-size: 1em;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.contact .contact_us {
+  width: 50vh;
+  height: 20vh;
+  line-height: 3rem;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+@media (max-width: 960px) {
+  .hero img {
+    width: 80%;
+  }
+  .about {
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+  .about img {
+    width: 100%;
+  }
+  .skills .images {
+    flex-direction: column;
+  }
+  .skills .images img {
+    width: 25%;
+    margin: 0 10px;
+  }
+  .service .service_box {
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+  .service .service_box img {
+    width: 60%;
+  }
+  .service .service_box hr {
+    display: none;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project .slider {
+    width: 80vw;
+  }
+  .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .contact .contact_us {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
