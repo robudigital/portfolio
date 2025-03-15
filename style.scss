@@ -21,6 +21,28 @@ body {
     color: white;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: 6rem;
+        border-radius: 50%;
+        margin: 2rem;
+    }
+    ul {
+        display: flex;
+        padding: 2rem;
+    }
+    ul li{
+        padding: 1rem;
+        color: white    ;
+    }
+    a{
+        color: white;
+    }
+}
+
 main {
     width: 100%;
     border-radius: 2px solid white;
@@ -34,6 +56,10 @@ main {
     font-size: 20px;
     text-align: center;
 
+    .content{
+        line-height: 4rem;
+        color: rgb(220, 200, 174);
+    }
     img {
         width: 20%;
         border-radius: 30px;
@@ -47,6 +73,7 @@ main {
     h1 {
         font-size: 3em;
         font-weight: 200;
+        
 
     }
 
@@ -69,16 +96,18 @@ main {
 
 
     img {
-        width: 30vmax;
+        width: 25vmax;
         border-radius: 30px;
     }
 
     h3 {
         font-size: 2em;
+        font-weight: 400;
     }
 
     p {
         font-size: 1.5em;
+        font-weight: 100;
     }
 }
 
@@ -90,11 +119,11 @@ main {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    line-height: 15rem;
+    line-height: 7rem;
 
     h1 {
-        font-size: 4em;
-        font-weight: 200;
+        font-size: 2em;
+        font-weight: 400;
     }
 
     .images img {
@@ -133,6 +162,12 @@ main {
             width: 15%;
             border-radius: 20px;
         }
+        h3{
+            font-weight: 400;
+        }
+        p{
+            font-weight: 100;
+        }
 
         display: flex;
         align-items: center;
@@ -145,6 +180,7 @@ main {
     align-items: center;
     justify-content: center;
     // flex-direction: column;
+    // flex-wrap: wrap;
     gap: 20px;
 
     .slider {
@@ -204,6 +240,9 @@ main {
             padding: 0.5em;
             border-radius: 5px;
         }
+        label{
+            font-weight: 100;
+        }
     }
 
 
@@ -213,7 +252,9 @@ main {
         height: 20vh;
         line-height: 3rem;
         padding: 20px;
-
+        p{
+            font-size: 100;
+        }
     }
 }
 
@@ -225,6 +266,7 @@ main {
     font-size: 1.5em;
     text-align: center;
     font-size: 1.5em;
+    margin: 3rem;
 }
 
 
@@ -232,6 +274,9 @@ main {
     .hero {
         img {
             width: 80%;
+        }
+        h1{
+            font-size: 4rem;
         }
     }
 
@@ -241,23 +286,38 @@ main {
         img {
             width: 100%;
         }
+        h3{
+        font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
     }
 
     .skills {
 
         .images {
             flex-direction: column;
-
+            line-height: 6rem;
             img {
                 width: 25%;
                 margin: 0 10px;
             }
         }
-
+        marquee{
+            margin: 0.5rem;
+            p{
+                font-size: 2rem;
+                padding:5px;
+            }
+            
+        }
 
     }
 
     .service {
+       
+      
         .service_box {
             text-align: center;
             flex-direction: column;
@@ -268,6 +328,13 @@ main {
 
             hr {
                 display: none;
+            }
+            h3{
+                font-size: 1.5rem;
+                
+            }
+            p{
+                font-size: 1rem;
             }
 
 
@@ -291,6 +358,11 @@ main {
         }
         .contact_us{
             width: 100%;
+            line-height: 2rem;
+            padding: 2rem;
         }
+    }
+    .navbar{
+        display: none;
     }
 }

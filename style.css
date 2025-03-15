@@ -15,6 +15,28 @@ body {
   color: white;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar img {
+  width: 6rem;
+  border-radius: 50%;
+  margin: 2rem;
+}
+.navbar ul {
+  display: flex;
+  padding: 2rem;
+}
+.navbar ul li {
+  padding: 1rem;
+  color: white;
+}
+.navbar a {
+  color: white;
+}
+
 main {
   width: 100%;
   border-radius: 2px solid white;
@@ -29,6 +51,10 @@ main {
   flex-direction: column;
   font-size: 20px;
   text-align: center;
+}
+.hero .content {
+  line-height: 4rem;
+  color: rgb(220, 200, 174);
 }
 .hero img {
   width: 20%;
@@ -55,14 +81,16 @@ main {
   margin: 0 10vmax;
 }
 .about img {
-  width: 30vmax;
+  width: 25vmax;
   border-radius: 30px;
 }
 .about h3 {
   font-size: 2em;
+  font-weight: 400;
 }
 .about p {
   font-size: 1.5em;
+  font-weight: 100;
 }
 
 .skills {
@@ -72,11 +100,11 @@ main {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  line-height: 15rem;
+  line-height: 7rem;
 }
 .skills h1 {
-  font-size: 4em;
-  font-weight: 200;
+  font-size: 2em;
+  font-weight: 400;
 }
 .skills .images img {
   width: 10%;
@@ -108,6 +136,12 @@ main {
 .service .service_box img {
   width: 15%;
   border-radius: 20px;
+}
+.service .service_box h3 {
+  font-weight: 400;
+}
+.service .service_box p {
+  font-weight: 100;
 }
 
 .project {
@@ -166,11 +200,17 @@ main {
   padding: 0.5em;
   border-radius: 5px;
 }
+.contact form label {
+  font-weight: 100;
+}
 .contact .contact_us {
   width: 50vh;
   height: 20vh;
   line-height: 3rem;
   padding: 20px;
+}
+.contact .contact_us p {
+  font-size: 100;
 }
 
 .footer {
@@ -181,11 +221,15 @@ main {
   font-size: 1.5em;
   text-align: center;
   font-size: 1.5em;
+  margin: 3rem;
 }
 
 @media (max-width: 960px) {
   .hero img {
     width: 80%;
+  }
+  .hero h1 {
+    font-size: 4rem;
   }
   .about {
     flex-direction: column;
@@ -194,12 +238,26 @@ main {
   .about img {
     width: 100%;
   }
+  .about h3 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
   .skills .images {
     flex-direction: column;
+    line-height: 6rem;
   }
   .skills .images img {
     width: 25%;
     margin: 0 10px;
+  }
+  .skills marquee {
+    margin: 0.5rem;
+  }
+  .skills marquee p {
+    font-size: 2rem;
+    padding: 5px;
   }
   .service .service_box {
     text-align: center;
@@ -211,6 +269,12 @@ main {
   }
   .service .service_box hr {
     display: none;
+  }
+  .service .service_box h3 {
+    font-size: 1.5rem;
+  }
+  .service .service_box p {
+    font-size: 1rem;
   }
   .project {
     flex-direction: column;
@@ -227,5 +291,10 @@ main {
   }
   .contact .contact_us {
     width: 100%;
+    line-height: 2rem;
+    padding: 2rem;
+  }
+  .navbar {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
